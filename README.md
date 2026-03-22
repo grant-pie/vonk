@@ -1,6 +1,6 @@
-# Knoppies — VCV Rack Modules Website
+# Vonk — VCV Rack Modules Website
 
-A static website listing all VCV Rack modules released under the **Knoppies** brand by Grant Pieterse. Built with plain HTML and CSS — no frameworks, no build step.
+A static website listing all VCV Rack modules released under the **Vonk** brand by Grant Pieterse. Built with plain HTML and CSS — no frameworks, no build step.
 
 ## Modules
 
@@ -10,11 +10,13 @@ A static website listing all VCV Rack modules released under the **Knoppies** br
 | BitBoy | Oscillator | [grant-pie/BitBoy](https://github.com/grant-pie/BitBoy) |
 | MotherFuzzer | Distortion | [grant-pie/MotherFuzzer](https://github.com/grant-pie/MotherFuzzer) |
 | SubGate8 | Gate Sequencer | [grant-pie/SubGate8](https://github.com/grant-pie/SubGate8) |
+| Barrage | Burst Sequencer | [grant-pie/Barrage](https://github.com/grant-pie/Barrage) |
+| Tenuto | Utility | [grant-pie/Tenuto](https://github.com/grant-pie/Tenuto) |
 
 ## Project Structure
 
 ```
-knoppies/
+vonk/
 ├── index.html        # Single-page site
 ├── assets/
 │   ├── avalanche.jpg
@@ -43,4 +45,4 @@ npx serve .
 
 ## License
 
-Proprietary — © Grant Pieterse / Knoppies
+Proprietary — © Grant Pieterse / Vonk

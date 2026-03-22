@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Knoppies — VCV Rack Modules</title>
+  <title>Vonk — VCV Rack Modules</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -103,7 +103,8 @@
     main {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 3rem 2rem 5rem;
+      padding: 3rem 1.25rem 5rem;
+      width: 100%;
     }
 
     .section-label {
@@ -118,6 +119,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(460px, 100%), 1fr));
       gap: 1.5rem;
+      width: 100%;
     }
 
     /* ── Card ── */
@@ -131,6 +133,7 @@
       gap: 1rem;
       transition: border-color 0.2s, box-shadow 0.2s;
       min-width: 0;
+      max-width: 100%;
     }
 
     .card:hover {
@@ -193,6 +196,31 @@
 
     .github-link svg {
       flex-shrink: 0;
+    }
+
+    .alpha-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #f59e0b;
+      background: #f59e0b18;
+      border: 1px solid #f59e0b44;
+      border-radius: 6px;
+      padding: 0.25rem 0.65rem;
+    }
+
+    .alpha-notice {
+      font-size: 0.82rem;
+      color: #f59e0b;
+      background: #f59e0b0e;
+      border: 1px solid #f59e0b33;
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      line-height: 1.5;
     }
 
     .card-image {
@@ -448,7 +476,7 @@
 
   <header>
     <div class="header-inner">
-      <div class="brand">Knopp<span>ies</span></div>
+      <div class="brand">Von<span>k</span></div>
       <div class="tagline">VCV Rack Plugins</div>
       <div class="rack-badge">Rack 2 Compatible</div>
       <nav class="site-nav">
@@ -459,7 +487,7 @@
   </header>
 
   <main>
-    <p class="section-label" id="modules">Modules — 4 available</p>
+    <p class="section-label" id="modules">Modules — 6 available</p>
 
     <div class="modules-grid">
 
@@ -470,6 +498,7 @@
           <div class="module-name">Avalanche</div>
           <div class="card-header-right">
             <div class="module-type">Granular Delay</div>
+            <span class="alpha-badge">⚠ Alpha</span>
             <a class="github-link" href="https://github.com/grant-pie/avalanche" target="_blank" rel="noopener">
               <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
               GitHub
@@ -477,6 +506,7 @@
           </div>
         </div>
         <div class="card-body">
+          <p class="alpha-notice">This module is currently in alpha. Expect bugs and breaking changes — feedback and bug reports are welcome via GitHub.</p>
           <p class="module-desc">
             Captures incoming audio into a buffer and plays it back as a cloud of overlapping grains.
             Each grain has its own envelope, enabling textures that range from subtle thickening to
@@ -708,6 +738,124 @@
         </div>
       </div>
 
+      <!-- Barrage -->
+      <div class="card">
+        <img class="card-image" src="assets/barrage.jpg" alt="Barrage module" />
+        <div class="card-header">
+          <div class="module-name">Barrage</div>
+          <div class="card-header-right">
+            <div class="module-type">Burst Sequencer</div>
+            <a class="github-link" href="https://github.com/grant-pie/Barrage" target="_blank" rel="noopener">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="module-desc">
+            A 16-step sequencer where each step is a self-contained burst generator. Instead of
+            a single gate per clock, each step fires a burst of evenly-spaced gates with independent
+            control over count, length, probability, and speed relative to the clock.
+          </p>
+          <div class="feature-list">
+            <span class="tag">16 Steps</span>
+            <span class="tag">Per-Step Burst</span>
+            <span class="tag">Count 1–16</span>
+            <span class="tag">Probability</span>
+            <span class="tag">Speed 0.25×–4×</span>
+            <span class="tag">Per-Step Gate Outputs</span>
+            <span class="tag">EOC per Step</span>
+            <span class="tag">Step CV Out</span>
+            <span class="tag">Forward / Reverse</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="io-row">
+            <div class="io-group">
+              <span class="io-label">Controls</span>
+              <div class="io-items">
+                <span class="io-item">Count</span>
+                <span class="io-item">Length</span>
+                <span class="io-item">Prob</span>
+                <span class="io-item">Speed</span>
+                <span class="io-item">Steps</span>
+                <span class="io-item">Dir</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Inputs</span>
+              <div class="io-items">
+                <span class="io-item">CLK</span>
+                <span class="io-item">RST</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Outputs</span>
+              <div class="io-items">
+                <span class="io-item">Gate 1–16</span>
+                <span class="io-item">EOC 1–16</span>
+                <span class="io-item">EOC</span>
+                <span class="io-item">Step CV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tenuto -->
+      <div class="card">
+        <img class="card-image" src="assets/tenuto.jpg" alt="Tenuto module" />
+        <div class="card-header">
+          <div class="module-name">Tenuto</div>
+          <div class="card-header-right">
+            <div class="module-type">Utility</div>
+            <a class="github-link" href="https://github.com/grant-pie/Tenuto" target="_blank" rel="noopener">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="module-desc">
+            A 4-channel variable gate length module. Takes gate or trigger inputs and re-emits
+            each as a gate of a fixed, independently-set length — from 1ms to 2 seconds.
+            Each channel retriggers cleanly on every rising edge.
+          </p>
+          <div class="feature-list">
+            <span class="tag">4 Channels</span>
+            <span class="tag">1ms – 2s Range</span>
+            <span class="tag">Retrigger</span>
+            <span class="tag">Shared Length CV</span>
+            <span class="tag">Trigger to Gate</span>
+            <span class="tag">Gate Shortening</span>
+            <span class="tag">8HP</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="io-row">
+            <div class="io-group">
+              <span class="io-label">Controls</span>
+              <div class="io-items">
+                <span class="io-item">Len ×4</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Inputs</span>
+              <div class="io-items">
+                <span class="io-item">In 1–4</span>
+                <span class="io-item">Length CV</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Outputs</span>
+              <div class="io-items">
+                <span class="io-item">Out 1–4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <section class="install-section">
@@ -749,7 +897,7 @@ cd &lt;module-name&gt;</pre>
             <span class="step-num">4</span>
             <div class="step-body">
               <div class="step-title">Launch VCV Rack</div>
-              <div class="step-desc">Start or restart VCV Rack. The module will appear in the module browser under <strong>Knoppies</strong>.</div>
+              <div class="step-desc">Start or restart VCV Rack. The module will appear in the module browser under <strong>Vonk</strong>.</div>
             </div>
           </div>
         </div>
@@ -758,7 +906,7 @@ cd &lt;module-name&gt;</pre>
   </main>
 
   <footer>
-    <p>© 2025 Grant Pieterse / Knoppies &nbsp;·&nbsp; Proprietary &nbsp;·&nbsp; <a href="https://vcvrack.com/" target="_blank" rel="noopener">VCV Rack</a></p>
+    <p>© 2025 Grant Pieterse / Vonk &nbsp;·&nbsp; Proprietary &nbsp;·&nbsp; <a href="https://vcvrack.com/" target="_blank" rel="noopener">VCV Rack</a></p>
   </footer>
 
 </body>
