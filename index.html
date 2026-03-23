@@ -199,27 +199,56 @@
       flex-shrink: 0;
     }
 
-    .alpha-badge {
+    .alpha-badge, .beta-badge {
       flex-shrink: 0;
       font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #f59e0b;
-      background: #f59e0b18;
-      border: 1px solid #f59e0b44;
       border-radius: 6px;
       padding: 0.25rem 0.65rem;
     }
 
-    .alpha-notice {
-      font-size: 0.82rem;
+    .alpha-badge {
       color: #f59e0b;
-      background: #f59e0b0e;
-      border: 1px solid #f59e0b33;
+      background: #f59e0b18;
+      border: 1px solid #f59e0b44;
+    }
+
+    .beta-badge {
+      color: #38bdf8;
+      background: #38bdf808;
+      border: 1px solid #38bdf833;
+    }
+
+    .alpha-notice, .beta-notice {
+      font-size: 0.82rem;
       border-radius: 6px;
       padding: 0.5rem 0.75rem;
       line-height: 1.5;
+    }
+
+    .alpha-notice {
+      color: #f59e0b;
+      background: #f59e0b0e;
+      border: 1px solid #f59e0b33;
+    }
+
+    .beta-notice {
+      color: #38bdf8;
+      background: #38bdf808;
+      border: 1px solid #38bdf822;
+    }
+
+    .dev-banner {
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: #ffffff06;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
     }
 
     .card-image {
@@ -474,7 +503,8 @@
   </header>
 
   <main>
-    <p class="section-label" id="modules">Modules — 6 available</p>
+    <p class="section-label" id="modules">Modules — 9 available</p>
+    <p class="dev-banner">All Vonk modules are currently under active development. Modules marked <strong>Alpha</strong> are experimental and may contain bugs or breaking changes. Modules marked <strong>Beta</strong> are more stable but still being refined. Bug reports and feedback are welcome via each module's GitHub repository.</p>
 
     <div class="modules-grid">
 
@@ -559,6 +589,7 @@
           <div class="module-name">BitBoy</div>
           <div class="card-badges">
             <span class="module-type">Oscillator</span>
+            <span class="beta-badge">Beta</span>
           </div>
           <a class="github-link" href="https://github.com/grant-pie/BitBoy" target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -614,6 +645,7 @@
           <div class="module-name">MotherFuzzer</div>
           <div class="card-badges">
             <span class="module-type">Distortion</span>
+            <span class="beta-badge">Beta</span>
           </div>
           <a class="github-link" href="https://github.com/grant-pie/MotherFuzzer" target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -671,6 +703,7 @@
           <div class="module-name">SubGate8</div>
           <div class="card-badges">
             <span class="module-type">Gate Sequencer</span>
+            <span class="beta-badge">Beta</span>
           </div>
           <a class="github-link" href="https://github.com/grant-pie/SubGate8" target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -725,6 +758,69 @@
         </div>
       </div>
 
+      <!-- SubGate16 -->
+      <div class="card">
+        <img class="card-image" src="assets/subgate16.jpg" alt="SubGate16 module" />
+        <div class="card-header">
+          <div class="module-name">SubGate16</div>
+          <div class="card-badges">
+            <span class="module-type">Gate Sequencer</span>
+            <span class="alpha-badge">⚠ Alpha</span>
+          </div>
+          <a class="github-link" href="https://github.com/grant-pie/SubGate16" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="card-body">
+          <p class="module-desc">
+            A 16-step gate sequencer with 4 subdivisions per step, giving 64 individually
+            togglable triggers. The expanded step count allows longer, more complex rhythmic
+            patterns while retaining the same swing, gate length, and clock sync features
+            as SubGate8.
+          </p>
+          <p class="alpha-notice">This module is currently in alpha. Expect bugs and breaking changes — feedback and bug reports are welcome via GitHub.</p>
+          <div class="feature-list">
+            <span class="tag">16 Steps × 4 Subdivisions</span>
+            <span class="tag">64 Toggles</span>
+            <span class="tag">Swing</span>
+            <span class="tag">Gate Length</span>
+            <span class="tag">Variable Step Count</span>
+            <span class="tag">Clock Sync</span>
+            <span class="tag">EOC Output</span>
+            <span class="tag">Run/Stop</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="io-row">
+            <div class="io-group">
+              <span class="io-label">Controls</span>
+              <div class="io-items">
+                <span class="io-item">Gate Length</span>
+                <span class="io-item">Swing</span>
+                <span class="io-item">Step Count</span>
+                <span class="io-item">16×4 Grid</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Inputs</span>
+              <div class="io-items">
+                <span class="io-item">Clock</span>
+                <span class="io-item">Reset</span>
+                <span class="io-item">Run</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Outputs</span>
+              <div class="io-items">
+                <span class="io-item">Gate</span>
+                <span class="io-item">EOC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Barrage -->
       <div class="card">
         <img class="card-image" src="assets/barrage.jpg" alt="Barrage module" />
@@ -732,6 +828,7 @@
           <div class="module-name">Barrage</div>
           <div class="card-badges">
             <span class="module-type">Burst Sequencer</span>
+            <span class="beta-badge">Beta</span>
           </div>
           <a class="github-link" href="https://github.com/grant-pie/Barrage" target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -796,6 +893,7 @@
           <div class="module-name">Tenuto</div>
           <div class="card-badges">
             <span class="module-type">Utility</span>
+            <span class="beta-badge">Beta</span>
           </div>
           <a class="github-link" href="https://github.com/grant-pie/Tenuto" target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -837,6 +935,145 @@
               <span class="io-label">Outputs</span>
               <div class="io-items">
                 <span class="io-item">Out 1–4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Riddim -->
+      <div class="card">
+        <img class="card-image" src="assets/riddim.jpg" alt="Riddim module" />
+        <div class="card-header">
+          <div class="module-name">Riddim</div>
+          <div class="card-badges">
+            <span class="module-type">Drum Sequencer</span>
+            <span class="alpha-badge">⚠ Alpha</span>
+          </div>
+          <a class="github-link" href="https://github.com/grant-pie/Riddim" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="card-body">
+          <p class="module-desc">
+            A 7-voice, 16-step drum pattern sequencer with per-voice gate outputs and a
+            dedicated fill mode. Swing, clock division, and one-click pattern randomization
+            make it easy to build and vary grooves live. The fill pattern is independent of
+            the main pattern and can be randomized at any time.
+          </p>
+          <p class="alpha-notice">This module is currently in alpha. Expect bugs and breaking changes — feedback and bug reports are welcome via GitHub.</p>
+          <div class="feature-list">
+            <span class="tag">7 Voices</span>
+            <span class="tag">16 Steps</span>
+            <span class="tag">Fill Mode</span>
+            <span class="tag">Swing</span>
+            <span class="tag">Clock Divide</span>
+            <span class="tag">Fill Density</span>
+            <span class="tag">Rand Pattern</span>
+            <span class="tag">Rand Fill</span>
+            <span class="tag">Clock Thru</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="io-row">
+            <div class="io-group">
+              <span class="io-label">Controls</span>
+              <div class="io-items">
+                <span class="io-item">Pattern Len</span>
+                <span class="io-item">Swing</span>
+                <span class="io-item">Fill Len</span>
+                <span class="io-item">Fill Density</span>
+                <span class="io-item">Clock Div</span>
+                <span class="io-item">Gate Len</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Inputs</span>
+              <div class="io-items">
+                <span class="io-item">Clock</span>
+                <span class="io-item">Fill</span>
+                <span class="io-item">Reset</span>
+                <span class="io-item">Rand Fill</span>
+                <span class="io-item">Rand Pat</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Outputs</span>
+              <div class="io-items">
+                <span class="io-item">Kick</span>
+                <span class="io-item">Snare</span>
+                <span class="io-item">HH Closed</span>
+                <span class="io-item">HH Open</span>
+                <span class="io-item">Tom 1</span>
+                <span class="io-item">Tom 2</span>
+                <span class="io-item">Perc/Clap</span>
+                <span class="io-item">Clk Thru</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scatter -->
+      <div class="card">
+        <img class="card-image" src="assets/scatter.jpg" alt="Scatter module" />
+        <div class="card-header">
+          <div class="module-name">Scatter</div>
+          <div class="card-badges">
+            <span class="module-type">Burst Generator</span>
+            <span class="alpha-badge">⚠ Alpha</span>
+          </div>
+          <a class="github-link" href="https://github.com/grant-pie/scatter" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="card-body">
+          <p class="module-desc">
+            A polyphonic gate burst generator that turns a single trigger into a randomised
+            cluster of gates spread across a clock-synced window. Each polyphonic channel
+            gets its own independent burst engine and random state, producing rhythmically
+            coherent but unpredictable fills, rolls, and ornaments.
+          </p>
+          <p class="alpha-notice">This module is currently in alpha. Expect bugs and breaking changes — feedback and bug reports are welcome via GitHub.</p>
+          <div class="feature-list">
+            <span class="tag">Polyphonic (16ch)</span>
+            <span class="tag">Clock Synced</span>
+            <span class="tag">Count 1–8</span>
+            <span class="tag">Spread 1–8 clk</span>
+            <span class="tag">Chaos</span>
+            <span class="tag">RNG Seed</span>
+            <span class="tag">Burst Display</span>
+            <span class="tag">CV Modulation</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="io-row">
+            <div class="io-group">
+              <span class="io-label">Controls</span>
+              <div class="io-items">
+                <span class="io-item">Count</span>
+                <span class="io-item">Spread</span>
+                <span class="io-item">Chaos</span>
+                <span class="io-item">Gate Len</span>
+                <span class="io-item">Seed</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Inputs</span>
+              <div class="io-items">
+                <span class="io-item">CLK</span>
+                <span class="io-item">IN</span>
+                <span class="io-item">RST</span>
+                <span class="io-item">CNT</span>
+                <span class="io-item">SPRD</span>
+              </div>
+            </div>
+            <div class="io-group">
+              <span class="io-label">Outputs</span>
+              <div class="io-items">
+                <span class="io-item">OUT</span>
               </div>
             </div>
           </div>

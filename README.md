@@ -12,6 +12,9 @@ A static website listing all VCV Rack modules released under the **Vonk** brand 
 | SubGate8 | Gate Sequencer | [grant-pie/SubGate8](https://github.com/grant-pie/SubGate8) |
 | Barrage | Burst Sequencer | [grant-pie/Barrage](https://github.com/grant-pie/Barrage) |
 | Tenuto | Utility | [grant-pie/Tenuto](https://github.com/grant-pie/Tenuto) |
+| SubGate16 | Gate Sequencer | [grant-pie/SubGate16](https://github.com/grant-pie/SubGate16) |
+| Riddim | Drum Sequencer | [grant-pie/Riddim](https://github.com/grant-pie/Riddim) |
+| Scatter | Burst Generator | [grant-pie/scatter](https://github.com/grant-pie/scatter) |
 
 ## Project Structure
 
